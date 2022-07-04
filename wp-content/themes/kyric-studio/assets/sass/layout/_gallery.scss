@@ -1,0 +1,16 @@
+.gallery{
+    padding: 20px;
+    margin-bottom: 125px;
+    .gallery-content{
+        margin-bottom: 65px;
+        .gallery-thumbnail{
+            img{
+                border-radius: 5px;
+            }
+            p{
+                font-size: $fz-28;
+                color: $primary;
+            }
+        }
+    }
+}

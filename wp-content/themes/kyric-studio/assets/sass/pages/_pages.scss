@@ -1,0 +1,16 @@
+.page-title {
+    font-size: $fz-80;
+    font-weight: 700;
+    color: $primary;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    
+    @include pad {
+        font-size: $fz-64;
+    }
+
+    @include mobile {
+        font-size: $fz-32;
+        padding-left: 10px;
+    }
+}

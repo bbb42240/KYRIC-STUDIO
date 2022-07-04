@@ -1,0 +1,140 @@
+//container
+.width-100{
+    width: 100%;
+}
+.width-60{
+    width: 60%;
+}
+.width-50{
+    width: 50%;
+}
+.width-40{
+    width: 40%;
+}
+//position
+.top-0{
+    top: 0px;
+}
+.right-0{
+    right: 0px;
+}
+.bottom-0{
+    bottom: 0px;
+}
+.left-0{
+    left: 0px;
+}
+//diaplay
+.d-flex{
+    display: flex;
+}
+//
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
+//
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+//
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+//
+.jc-start{
+    justify-content: start;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-end{
+    justify-content: flex-end;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+//
+.ai-start{
+    align-items: flex-start;
+}
+.ai-center{
+    align-items: center;
+}
+.ai-end{
+    align-items: flex-end;
+}
+.as-center{
+    align-self: center;
+}
+
+// padding
+.pad-40{
+    padding: 40px;
+}
+
+// fading animation
+.fade{
+    transition: visibility .5s, opacity .5s linear;
+}
+.fadeIn{
+    visibility: visible;
+    opacity: 1;
+} 
+.fadeOut{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+// .d-up-pad-block{
+//     @include up-pad{
+//         display: block;
+//     }
+// }
+// .d-up-mobile-block{
+//     @include up-mobile{
+//         display: block;
+//     }
+// }
+// .d-pad-block{
+//     @include pad{
+//         display: block;
+//     }
+// }
+// .d-mobile-block{
+//     @include mobile{
+//         display: block;
+//     }
+// }
+// .d-up-pad-flex{
+//     @include up-pad{
+//         display: flex;
+//     }
+// }
+// .d-up-mobile-flex{
+//     @include up-mobile{
+//         display: flex;
+//     }
+// }
+// .d-up-pad-none{
+//     @include up-pad{
+//         display: none;
+//     }
+// }
+// .d-up-mobile-none{
+//     @include up-mobile{
+//         display: none;
+//     }
+// }

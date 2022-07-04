@@ -1,0 +1,33 @@
+// color
+$primary: #1A1311;
+$primary-light: #707070;
+$black: #000000;
+$white: #FFFFFF;
+
+// font family
+// $font-family-base: -apple-system, BlinkMacSystemFont, // Mac 
+//                     "Segoe UI", "Microsoft JhengHei", // 微軟
+//                     'Noto Sans TC', Roboto,
+//                     "Helvetica Neue", Arial,
+//                     sans-serif; // 無襯線體
+$font-family-base: 'Open Sans','Noto Sans TC', sans-serif;
+$font-family-Noto: 'Noto Sans TC', sans-serif;
+
+// font-size_px
+$font-size-base: 16px;
+
+$fz-10: $font-size-base * 0.5;
+$fz-12: $font-size-base * 0.75;
+$fz-14: $font-size-base * 0.875;
+$fz-16: $font-size-base;
+$fz-20: $font-size-base * 1.25;
+$fz-24: $font-size-base * 1.5;
+$fz-28: $font-size-base * 1.75;
+$fz-32: $font-size-base * 2;
+$fz-36: $font-size-base * 2.25;
+$fz-42: $font-size-base * 2.625;
+$fz-48: $font-size-base * 3;
+$fz-56: $font-size-base * 3.5;
+$fz-64: $font-size-base * 4;
+$fz-72: $font-size-base * 4.5;
+$fz-80: $font-size-base * 5;

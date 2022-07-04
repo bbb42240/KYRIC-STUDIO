@@ -1,0 +1,314 @@
+.kyric-home{
+    height: 100vh;
+    margin-bottom: 65px;
+}
+.kyric-portfolio{
+    height: auto;
+}
+.header-container{
+    position: relative;
+    overflow: hidden;
+    @include mobile{
+        padding: 20px;
+    }
+    .hero-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .hero-bg{
+            position: relative;
+            background: center / cover no-repeat url("../images/photos/_KYO0858.jpg");
+            min-height: 100vh;
+            z-index: 1;
+        }
+    }
+}
+
+.nav{
+    @include pad{
+        flex-direction: column;
+    }
+    .nav-brand{
+        z-index: 96;
+        padding-bottom: 30px;
+        a{
+            display: inline-block;
+        }
+        img{
+            transition: all .6s cubic-bezier(.19,1,.22,1);
+            @include mobile{
+                width: 180px;
+            }
+            width: 220px;
+        }
+    }
+    .navmenu{
+        @include pad{
+            display: none;
+        }
+        @include mobile{
+            display: none;
+        }
+        z-index: 96;
+        li{
+            a{
+                font-size: $fz-28;
+                color: $primary;
+            }
+        }
+        li:not(:first-child){
+            padding-left: 40px;
+        }
+    }
+    .social-media li:not(:last-child){
+        padding-bottom: 5px;    
+    }
+    .social-btn{
+        position: relative;
+        left: 0;
+        z-index: 96;
+        .icon-fb, .icon-ig{
+            color: $primary;
+            font-size: $fz-28;
+            @include mobile{
+                left: 20px;
+                font-size: $fz-24;
+            }
+        }
+    }
+}
+.popup-menu{
+    @include desktop{
+        display: none;
+    }
+    position: relative;
+    .menu-btn{
+        position: absolute;
+        width: 55px;
+        height: 30px;
+        top: -200px;
+        right: 0;
+        z-index: 99;
+        transition: all .5s ease-in-out;
+
+        @include mobile{
+            width: 35px;
+            top: -160px;
+        }
+        span{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 8px;
+            right: 0;
+            background-color: $primary;
+
+            @include mobile{
+                height: 5px;
+            }
+        }
+        span:nth-child(1){
+            top: 0px;
+        }
+        span:nth-child(2){
+            top: 11px;
+            transition: all .1s ease-in-out;
+
+            @include mobile{
+                top: 7px;
+            }
+        }
+        span:nth-child(3){
+            top: 22px;
+
+            @include mobile{
+                top: 14px;
+            }
+        }
+        span:nth-child(1), span:nth-child(3){
+            transition: all .3s ease-in-out;
+        }
+    }
+    .popup-panel{
+        position: fixed;
+        width: 65%;
+        height: 100vh;
+        top: 0;
+        right: -65%;
+        z-index: 98;
+        background-color: #fff;
+        transition: right .6s cubic-bezier(.19,1,.22,1);
+    }
+    ul{
+        padding: 140px 0 0 80px;
+        li{
+            font-weight: bold;
+            a{
+                color: $primary;
+            }
+        }
+        li:not(:last-child){
+            padding-bottom: 40px;
+            @include mobile{
+                padding-bottom: 20px;
+            }
+        }
+        li:last-child{
+            position: absolute;
+            bottom: 40px;
+        }
+        .icon-letter{
+            position: relative;
+            top: 6px;
+            padding-left: 5px;
+            font-size: $fz-64;
+            @include mobile{
+                font-size: $fz-42;
+            }
+        }
+        @include mobile{
+            font-size: $fz-24;
+            padding: 175px 0 0 25px;
+        }
+    }
+    .menu-btn.active{
+        top: -75px;
+        @include pad{
+            top: -225px;
+        }
+        @include mobile{
+            top: -160px;
+        }
+        span:nth-child(2){
+            background-color: transparent;
+            transform: translateY(-30px);
+            padding-top: 25px;
+        }
+        span:nth-child(1){
+            top: 0;
+        }
+        span:nth-child(3){
+            top: 0;
+        }
+        span:nth-child(1){
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            -moz-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+        }
+        span:nth-child(3){
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+        }
+    }
+    .popup-panel.active{
+        right: 0;
+    }
+}
+
+.popup-overlay{
+    @include pad{
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        opacity: 50%;
+        z-index: 97;
+    }
+}
+
+.contact-btn{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 65px;
+    z-index: 96;
+    a{
+        color: $primary;
+        span{
+            position: relative;
+            width: 100%;
+            font-size: $fz-32;
+            font-weight: 700;
+            top: -2px;
+            background-color: #fff;
+            padding: 4px 10px;
+            @include pad{
+                font-size: $fz-28;
+            }
+            @include mobile{
+                font-size: $fz-20;
+                padding: 3px 8px;
+            }
+        }
+        .icon-letter{
+            position: relative;
+            font-size: $fz-36;
+            top: 2px;
+            left: 8px;
+            @include pad{
+                font-size: $fz-32;
+            }
+            @include mobile{
+                font-size: $fz-24;
+                left: 4px;
+            }
+        }
+    }
+}
+.contact-btn.single{
+    width: auto;
+    right: 25px;
+    bottom: 150px;
+    @include mobile{
+        bottom: 100px;
+    }
+    a{
+        color: #fff;
+        span{
+            background-color: $primary;
+        }
+    }
+}
+
+a.scrollTop-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    z-index: 99;
+    background-color: #fff;
+    color: $primary;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    @include pad{
+        padding: 4px;
+    }
+    @include mobile{
+        padding: 3px;
+    }
+    .icon-up-arrow{
+        position: relative;
+        font-size: $fz-36;
+        @include pad{
+            font-size: $fz-32;
+        }
+        @include mobile{
+            font-size: $fz-28;
+        }
+    }
+}
+
+a.scrollTop-btn.single{
+    background-color: $primary;
+    color: #fff;
+}

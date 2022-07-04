@@ -1,0 +1,35 @@
+
+.footer{
+    position: relative;
+    .footer-container {
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        padding: 20px 40px;
+        z-index: 99;
+        @include mobile{
+            padding: 15px 20px;
+        }
+        .studio-contact{
+            @include mobile{
+                display: none;
+            }
+        }
+        .studio-contact a, p.studio-copyright{
+            color: #fff;
+            font-weight: bold;
+            @include pad{
+                font-size: $fz-14;
+            }
+            @include mobile{
+                font-size: $fz-12;
+            }
+        }
+        .phone{
+            margin-right: 40px;
+            @include mobile{
+                margin-right: 20px;
+            }
+        }
+    }
+}
