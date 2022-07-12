@@ -12,7 +12,7 @@ get_header();
 
 <section id="commercial" class="gallery">
     <a class="cate-link" href="<?php echo get_page_link(5); ?>">
-        <h2 class="cate-title">COMMERCIAL123</h2>
+        <h2 class="cate-title">COMMERCIAL</h2>
     </a>
     <div id="commercialGallery" class="gallery-content">
         <?php
@@ -24,7 +24,7 @@ get_header();
         ));
         while ($commercial_loop->have_posts()) : $commercial_loop->the_post(); ?>
 
-            <div class="gallery-thumbnail wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="25" data-wow-iteration="1">
+            <div class="gallery-thumbnail wow fadeInUp" data-wow-duration="2.5s" data-wow-delay=".25s" data-wow-offset="0" data-wow-iteration="1">
                 <div class="thumbnail-content">
                     <a href="<?php the_permalink(); ?>">
                         <?php
@@ -238,6 +238,12 @@ get_header();
         </a>
     </div>
 </section>
+
+<div class="demo-container">
+  <div class='demo demo1'></div>
+  <div class='demo demo2'></div>
+  <div class='demo demo3'></div>
+</div>
 
 
 <?php

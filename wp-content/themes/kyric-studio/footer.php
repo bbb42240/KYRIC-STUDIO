@@ -133,27 +133,27 @@
 </script>
 
 <!-- 只讓 MAGNIFIC POPUP VIDEO  JS 在商業動態頁面啟動 -->
-<?php if (is_single(commercial-film)) { ?>
-  <script>
-    var videoYoutubeLink = "<?php the_field('portfolio_link'); ?>"
+<?php if (is_single(commercial - film)) { ?>
+	<script>
+		var videoYoutubeLink = "<?php the_field('portfolio_link'); ?>"
 
-    /*--------------------
+		/*--------------------
  MAGNIFIC POPUP VIDEO  JS
  ----------------------*/
-    $(".video-modal").magnificPopup({
-      type: "iframe",
+		$(".video-modal").magnificPopup({
+			type: "iframe",
 
-      iframe: {
-        patterns: {
-          youtube: {
-            index: "youtube.com",
-            src: videoYoutubeLink,
-          },
-        },
-      },
-    });
-  </script>
-  <?php } ?>
+			iframe: {
+				patterns: {
+					youtube: {
+						index: "youtube.com",
+						src: videoYoutubeLink,
+					},
+				},
+			},
+		});
+	</script>
+<?php } ?>
 
 <!-- <script>
 	var ripple = new RippleEffect({
@@ -169,6 +169,25 @@
 		hover: true,
 	});
 </script> -->
+
+<script src="<?php echo get_theme_file_uri('assets/js/ripple-effect.js'); ?>"></script>
+<script>
+	
+	var ripple = new RippleEffect({
+		parent: document.querySelector('.hero-bg'),
+		texture: '<?php echo get_template_directory_uri(); ?>/assets/images/photos/_KYO0858.jpg',
+		intensity: 2,
+		strength: 3,
+		area: 6,
+		waveSpeed: 0.0015,
+		speedIn: 1.5,
+		speedOut: 2,
+		easing: 'Expo.easeInOut',
+		hover: true,
+	});
+
+	
+</script>
 
 <script>
 	new WOW().init();

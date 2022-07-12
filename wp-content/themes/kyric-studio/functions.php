@@ -157,12 +157,13 @@ function kyric_studio_scripts() {
 	wp_deregister_script('jquery'); // remove standard jquery
 	wp_register_script('jquery3.6', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', null, null, true );
 	wp_enqueue_script('jquery3.6');
-	wp_register_script('three', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js', null, null, true );
+	wp_register_script('three', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js', null, null, true );
 	wp_enqueue_script('three');
-	wp_register_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js', null, null, true );
+	wp_register_script('gsap', 'https://unpkg.co/gsap@3/dist/gsap.min.js', null, null, true );
 	wp_enqueue_script('gsap');
-	wp_register_script('ripple-effect', 'https://unpkg.com/ripple-hover-effect@1.0.0/src/ripple-effect.js', null, null, true );
-	wp_enqueue_script('ripple-effect');
+	// wp_enqueue_script('ripple-effect', get_template_directory_uri() . '/assets/js/ripple-effect.js', array(), _S_VERSION, true);
+	// wp_register_script('ripple-effect', 'https://unpkg.com/ripple-hover-effect@1.0.0/src/ripple-effect.js', null, null, true );
+	// wp_enqueue_script('ripple-effect');
 	wp_enqueue_script('justified-gallery-js', get_template_directory_uri() . '/assets/js/jquery.justifiedGallery.js', array(), _S_VERSION, true);
 	wp_register_script('wow', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', null, null, true );
 	wp_enqueue_script('wow');

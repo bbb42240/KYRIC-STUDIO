@@ -73,7 +73,7 @@
 		<!-- END of the sidebar menu -->
 
 		<div class="hero-header">
-			<div class="hero-bg ripple"></div>
+			<div class="hero-bg ripple wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="25" data-wow-iteration="1""></div>
 		</div>
 		<a href="#" class="scrollTop-btn fade fadeOut" id="toTop-btn">
 			<span><i class="icon-up-arrow"></i></span>

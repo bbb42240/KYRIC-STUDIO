@@ -147,6 +147,29 @@
  * Copyright (c) 2019 Daniel Eden
  */
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -409,7 +432,6 @@ h1, h2, h3 {
 
 .header-container .hero-header .hero-bg {
   position: relative;
-  background: center/cover no-repeat url("../images/photos/_KYO0858.jpg");
   min-height: 100vh;
   z-index: 1;
 }
